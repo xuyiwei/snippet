@@ -3,9 +3,7 @@
 <form id="form1" name="form1" method="post" action="index.html">
   <input type="submit" name="button" id="button" value="提交" />
 </form>
-
 这样提交按钮是标签 <input type="submit">，如果想换成图片加上样式，把value="提交" 改成value=" "（这样“提交”两个字就不会显示在这张背景图片的上面）：
-
 #button{
  background:url(eeo_2.jpg) no-repeat;
  width:100px;
@@ -17,7 +15,6 @@
 
 
 第二种：直接使用图片标签按钮
-
 <form id="form1" name="form1" method="post" action="index.html">
   <input name="submit" type="image" value="ee" src="eeo_2.jpg" />
 </form>
@@ -26,12 +23,10 @@
  
 
 第三种：由于上面第二种图片直接使用 “src”链接，但是如果一个网站很多需要到表单图片按钮展示的话，这样就会增加网页显示的速度！之前说过如果把全部类型差不多的图片整合成一张，每个页面使用css+div调用同一张图片里面的不同个按钮图标图片，这样的话便能更优化代码以及网站。
-
 <form id="form1" name="form1" method="post" action="index.html">
   <input name="submit" type="image" value="ee" src="eeo_2.jpg" />
 </form>
 样式：
-
 button{
  background:url(eeo_2.jpg) no-repeat -54px -35px;
  width:100px;
